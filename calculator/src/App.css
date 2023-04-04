@@ -5,8 +5,9 @@
 }
 .calci-display{
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  font-size: 50px;
+  
   text-align: center;
 }
 
@@ -18,4 +19,9 @@
 .btns{
   display: flex;
   flex-direction: column;
+  
+}
+.btns--grp{
+  display: flex;
+  width: 250px;
 }

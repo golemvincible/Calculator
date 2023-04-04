@@ -4,23 +4,27 @@ export default function Calculator(){
     const [num1, setNum1] = useState(0);
     const [num2,setNum2] = useState(0);
     const [result,setResult] = useState(0);
-
+    const flag=false;
     function handleChange(event){
         setNumbers(
             
         )
     }
+    
     function addition(){
-        setResult(Number(num1)+Number(num2))
+        return(Number(num1)+Number(num2))
     }
     function subtraction(){
-        setResult(Number(num1)-Number(num2))
+        return(Number(num1)-Number(num2))
     }
     function multiply(){
-        setResult(Number(num1)*Number(num2))
+        return(Number(num1)*Number(num2))
     }
     function division(){
-        setResult(Number(num1)/Number(num2))
+        return(Number(num1)/Number(num2))
+    }
+    function equals(){
+        
     }
     return(
         <div className='calci-display'>
@@ -47,25 +51,35 @@ export default function Calculator(){
             </div>
             
             <div className="btns">
+                <div className='btns--grp'>
+                    <button
+                        onClick={addition}
+                    >
+                        +
+                    </button>
+                    <button
+                        onClick={subtraction}
+                    >
+                        -
+                    </button>
+                </div>
+                <div className="btns--grp">
+                    <button
+                        onClick={multiply}
+                    >
+                        *
+                    </button>
+                    <button
+                        onClick={division}
+                    >
+                        /
+                    </button>
+                </div>
+                
                 <button
-                    onClick={addition}
+                    onClick={equals}
                 >
-                    +
-                </button>
-                <button
-                    onClick={subtraction}
-                >
-                    -
-                </button>
-                <button
-                    onClick={multiply}
-                >
-                    *
-                </button>
-                <button
-                    onClick={division}
-                >
-                    /
+                    =
                 </button>
             </div>
             
