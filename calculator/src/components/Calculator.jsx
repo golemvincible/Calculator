@@ -24,25 +24,28 @@ export default function Calculator(){
     }
     return(
         <div className='calci-display'>
-            <div>
+            <div className='input--boxes'>
                 <input 
                     type="number"
                     placeholder='Enter 1st number'
                     onChange={(event)=>{setNum1(event.target.value)}}
                     name="num1" 
-                    // value={result}
+                    
                 />
                 <input 
                     type="number"
                     placeholder='Enter 2nd number'
                     onChange={(event)=>{setNum2(event.target.value)}}
                     name="num2"
-                    // value={result}
+                    
+                />
+                <input
+                    type='number'
+                    name='result'
+                    value={result} 
                 />
             </div>
-            <div>
-                
-            </div>
+            
             <div className="btns">
                 <button
                     onClick={addition}
@@ -65,7 +68,7 @@ export default function Calculator(){
                     /
                 </button>
             </div>
-            {result}
+            
         </div>
     )
 }

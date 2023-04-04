@@ -2,6 +2,20 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+}
+.calci-display{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 50px;
   text-align: center;
 }
 
+.input--boxes{
+  display: flex;
+  flex-direction: column;
+  
+}
+.btns{
+  display: flex;
+  flex-direction: column;
+}
